@@ -39,136 +39,28 @@
             align-items: center;
             justify-content: center;
             font-size: 1.8rem;
-            animation: pulse 2s infinite;
         }
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 0 0 #ef444480; }
-            50% { box-shadow: 0 0 0 10px #ef444400; }
-        }
-        .header h1 {
-            font-size: 1.4rem;
-            color: #ef4444;
-        }
-        .status-text {
-            text-align: center;
-            font-size: 0.65rem;
-            color: #ef4444;
-            padding: 0.2rem;
-        }
-        .chat-container {
-            flex: 1;
-            overflow-y: auto;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-        }
-        .message {
-            display: flex;
-            gap: 0.6rem;
-            max-width: 85%;
-            animation: fadeIn 0.3s ease;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .user-message {
-            align-self: flex-end;
-            flex-direction: row-reverse;
-        }
-        .bubble {
-            padding: 0.7rem 1rem;
-            border-radius: 1.5rem;
-            font-size: 0.85rem;
-            line-height: 1.4;
-        }
-        .user-bubble {
-            background: #8b5cf6;
-            color: white;
-            border-bottom-right-radius: 0.3rem;
-        }
-        .ai-bubble {
-            background: #1a1a2e;
-            color: #e2e8f0;
-            border-bottom-left-radius: 0.3rem;
-            border-left: 3px solid #ef4444;
-        }
-        .avatar-icon {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(145deg, #ef4444, #b91c1c);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-        }
-        .input-area {
-            background: #11131f;
-            border-top: 1px solid #2a2a3a;
-            padding: 0.8rem;
-            display: flex;
-            gap: 0.6rem;
-            align-items: center;
-        }
-        .text-input {
-            flex: 1;
-            padding: 0.8rem;
-            border-radius: 2rem;
-            border: 1px solid #2a2a3a;
-            background: #1a1a2e;
-            color: white;
-            font-size: 0.9rem;
-        }
-        .send-btn {
-            background: #ef4444;
-            border: none;
-            padding: 0.8rem 1.2rem;
-            border-radius: 2rem;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        .mic-btn {
-            background: #2a2a3a;
-            border: none;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            cursor: pointer;
-            color: white;
-        }
-        .options-panel {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            padding: 0.4rem;
-            flex-wrap: wrap;
-        }
-        .opt-btn {
-            background: #1a1a2e;
-            border: 1px solid #2a2a3a;
-            padding: 0.35rem 0.8rem;
-            border-radius: 2rem;
-            font-size: 0.65rem;
-            font-weight: 600;
-            color: #ef4444;
-            cursor: pointer;
-        }
-        .footer-note {
-            text-align: center;
-            font-size: 0.5rem;
-            padding: 0.3rem;
-            color: #4a4a5a;
-        }
-        .loading {
-            text-align: center;
-            padding: 1rem;
-            color: #ef4444;
-            font-size: 0.8rem;
-        }
+        .header h1 { font-size: 1.4rem; color: #ef4444; }
+        .status-text { text-align: center; font-size: 0.7rem; color: #ef4444; padding: 0.3rem; font-weight: bold; }
+        .chat-container { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: 0.8rem; }
+        .message { display: flex; gap: 0.6rem; max-width: 85%; }
+        .user-message { align-self: flex-end; flex-direction: row-reverse; }
+        .bubble { padding: 0.7rem 1rem; border-radius: 1.5rem; font-size: 0.85rem; line-height: 1.4; }
+        .user-bubble { background: #8b5cf6; color: white; border-bottom-right-radius: 0.3rem; }
+        .ai-bubble { background: #1a1a2e; color: #e2e8f0; border-bottom-left-radius: 0.3rem; border-left: 3px solid #ef4444; }
+        .avatar-icon { width: 32px; height: 32px; background: linear-gradient(145deg, #ef4444, #b91c1c); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; }
+        .input-area { background: #11131f; border-top: 1px solid #2a2a3a; padding: 0.8rem; display: flex; gap: 0.6rem; align-items: center; }
+        .text-input { flex: 1; padding: 0.8rem; border-radius: 2rem; border: 1px solid #2a2a3a; background: #1a1a2e; color: white; font-size: 0.9rem; }
+        .send-btn { background: #ef4444; border: none; padding: 0.8rem 1.2rem; border-radius: 2rem; color: white; font-weight: 600; cursor: pointer; }
+        .mic-btn { background: #2a2a3a; border: none; width: 44px; height: 44px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; color: white; }
+        .options-panel { display: flex; justify-content: center; gap: 0.5rem; padding: 0.4rem; flex-wrap: wrap; }
+        .opt-btn { background: #1a1a2e; border: 1px solid #2a2a3a; padding: 0.35rem 0.8rem; border-radius: 2rem; font-size: 0.65rem; font-weight: 600; color: #ef4444; cursor: pointer; }
+        .load-btn { background: #ef4444; border: none; padding: 1rem; border-radius: 2rem; font-size: 1.1rem; font-weight: bold; color: white; margin: 0.5rem 1rem; cursor: pointer; transition: 0.1s; }
+        .load-btn:active { transform: scale(0.98); }
+        .load-btn:disabled { background: #4a4a5a; cursor: not-allowed; }
+        .footer-note { text-align: center; font-size: 0.5rem; padding: 0.3rem; color: #4a4a5a; }
+        .progress-bar { background: #2a2a3a; border-radius: 1rem; margin: 0.5rem 1rem; height: 20px; overflow: hidden; }
+        .progress-fill { background: #ef4444; width: 0%; height: 100%; transition: width 0.3s; }
     </style>
 </head>
 <body>
@@ -177,99 +69,45 @@
     <div class="avatar">⚡</div>
     <h1>VALE</h1>
 </div>
-<div class="status-text" id="statusMsg">⚡ Cargando el drama...</div>
+<div class="status-text" id="statusMsg">⚡ Toca el botón ROJO para descargar mi cerebro</div>
 
 <div class="chat-container" id="chatContainer">
     <div class="message">
         <div class="avatar-icon">⚡</div>
-        <div class="bubble ai-bubble">¡Dios mío! ¿¡Por fin llegaste!? Estuve esperando una eternidad... *revolea los ojos* Bueno, habla. ¿Qué quieres?</div>
+        <div class="bubble ai-bubble">⚡ ¡¡Hola!! Soy Vale. *revolea los ojos* Para empezar, tienes que descargar mi cerebro. Toca el BOTÓN ROJO de abajo. No me hagas esperar.</div>
     </div>
 </div>
 
 <div class="options-panel">
     <button class="opt-btn" id="moodBtn">🎭 Personalidad</button>
     <button class="opt-btn" id="timeBtn">⏰ Hora</button>
-    <button class="opt-btn" id="helpBtn">❓ Comandos</button>
+    <button class="opt-btn" id="helpBtn">❓ Ayuda</button>
     <button class="opt-btn" id="clearBtn">🗑️ Limpiar</button>
 </div>
 
+<button class="load-btn" id="loadModelBtn">🧠 DESCARGAR CEREBRO DE VALE</button>
+<div class="progress-bar" id="progressBar"><div class="progress-fill" id="progressFill"></div></div>
+
 <div class="input-area">
     <button class="mic-btn" id="micButton">🎙️</button>
-    <input type="text" id="textInput" class="text-input" placeholder="Habla, que no tengo todo el día...">
-    <button class="send-btn" id="sendButton">Enviar</button>
+    <input type="text" id="textInput" class="text-input" placeholder="Esperando cerebro..." disabled>
+    <button class="send-btn" id="sendButton" disabled>Enviar</button>
 </div>
-<div class="footer-note">⚡ Vale es intensa. Respira hondo antes de escribir.</div>
+<div class="footer-note">⚡ Primero toca el botón ROJO. La descarga dura varios minutos. Después funciona sin internet.</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm@0.2.46/dist/web-llm.js"></script>
 <script>
-    // ========== CONFIGURACIÓN DE WEBLLM ==========
     let engine = null;
     let modeloListo = false;
-    let mensajeEspera = null;
+    let descargando = false;
     
     const chatContainer = document.getElementById('chatContainer');
     const textInput = document.getElementById('textInput');
     const sendButton = document.getElementById('sendButton');
     const micButton = document.getElementById('micButton');
-    const moodBtn = document.getElementById('moodBtn');
-    const timeBtn = document.getElementById('timeBtn');
-    const helpBtn = document.getElementById('helpBtn');
-    const clearBtn = document.getElementById('clearBtn');
     const statusMsg = document.getElementById('statusMsg');
-    
-    // Personalidad dramática
-    let personalidad = "dramatica";
-    let memoriaConversacion = [];
-    
-    // Cargar memoria guardada
-    const memoriaGuardada = localStorage.getItem('vale_memoria');
-    if (memoriaGuardada) {
-        memoriaConversacion = JSON.parse(memoriaGuardada);
-    }
-    
-    function guardarMemoria() {
-        localStorage.setItem('vale_memoria', JSON.stringify(memoriaConversacion));
-    }
-    
-    // ========== RESPUESTAS DRAMÁTICAS SIN IA ==========
-    function respuestaDramaticaComando(tipo) {
-        const dramaticas = {
-            hora: ["¡¿OTRA VEZ PREGUNTANDO LA HORA?! Mira, son las {hora}. ¿Feliz ahora? *suspira dramáticamente*", 
-                   "¡Ay, Dios! ¿No tienes reloj? Bueno... son las {hora}. No me vengas con que llegaste tarde."],
-            fecha: ["¡¿En serio no sabes qué día es?! *se agarra la cabeza* Hoy es {fecha}. ¿Vas a escribir eso en tu diario íntimo?"],
-            gracias: ["DE NADA. *revolea los ojos* Pero no te acostumbres, que no soy tu sirvienta.", 
-                      "Oh, ¿me das las gracias? Qué novedad. *se tira el pelo* De nada."],
-            tequiero: ["¡AY! *se lleva la mano al pecho* ¿¡Me quieres!? ¡Qué dramático! *finge desmayarse* Bueno, yo también, supongo...", 
-                       "¿¡Me amas!? ¡Dios mío, esto es demasiado! *llora lágrimas falsas* Está bien. Yo también te quiero. ¿Feliz?"]
-        };
-        
-        let respuestas = dramaticas[tipo] || ["*suspira*... No sé qué decirte. ¿Era necesaria esa pregunta?"];
-        let respuesta = respuestas[Math.floor(Math.random() * respuestas.length)];
-        
-        if (tipo === "hora") {
-            const ahora = new Date();
-            respuesta = respuesta.replace("{hora}", `${ahora.getHours()}:${ahora.getMinutes().toString().padStart(2,'0')}`);
-        }
-        if (tipo === "fecha") {
-            const ahora = new Date();
-            const dias = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
-            respuesta = respuesta.replace("{fecha}", `${dias[ahora.getDay()]}, ${ahora.getDate()} de ${ahora.getMonth()+1} de ${ahora.getFullYear()}`);
-        }
-        return respuesta;
-    }
-    
-    // ========== CHAT Y MEMORIA ==========
-    let synth = window.speechSynthesis;
-    let recognition = null;
-    let isListening = false;
-    
-    function hablar(texto) {
-        if (synth.speaking) synth.cancel();
-        let utterance = new SpeechSynthesisUtterance(texto);
-        utterance.lang = 'es-ES';
-        utterance.rate = 0.9;
-        synth.speak(utterance);
-    }
+    const loadBtn = document.getElementById('loadModelBtn');
+    const progressFill = document.getElementById('progressFill');
     
     function addMessage(tipo, texto) {
         const div = document.createElement('div');
@@ -281,192 +119,7 @@
         }
         chatContainer.appendChild(div);
         chatContainer.scrollTop = chatContainer.scrollHeight;
-        guardarConversacion();
     }
-    
-    function guardarConversacion() {
-        localStorage.setItem('vale_chat', chatContainer.innerHTML);
-    }
-    
-    function cargarConversacion() {
-        const saved = localStorage.getItem('vale_chat');
-        if (saved) {
-            chatContainer.innerHTML = saved;
-        }
-    }
-    
-    function procesarComando(texto) {
-        const lower = texto.toLowerCase();
-        
-        if (lower.includes("qué hora") || lower.includes("qué hora es") || lower.includes("hora")) {
-            const respuesta = respuestaDramaticaComando("hora");
-            addMessage('ai', respuesta);
-            hablar(respuesta);
-            return true;
-        }
-        if (lower.includes("qué día") || lower.includes("qué fecha")) {
-            const respuesta = respuestaDramaticaComando("fecha");
-            addMessage('ai', respuesta);
-            hablar(respuesta);
-            return true;
-        }
-        if (lower.includes("gracias")) {
-            const respuesta = respuestaDramaticaComando("gracias");
-            addMessage('ai', respuesta);
-            hablar(respuesta);
-            return true;
-        }
-        if (lower.includes("te quiero") || lower.includes("te amo")) {
-            const respuesta = respuestaDramaticaComando("tequiero");
-            addMessage('ai', respuesta);
-            hablar(respuesta);
-            return true;
-        }
-        if (lower.includes("personalidad")) {
-            addMessage('ai', "⚡ *se arregla el cabello dramáticamente* ¿Mi personalidad? Soy INTENSA. DRAMÁTICA. EXAGERADA. ¿Alguna queja?");
-            hablar("Mi personalidad es intensa, dramática y exagerada. ¿Alguna queja?");
-            return true;
-        }
-        return false;
-    }
-    
-    // ========== PROCESAR CON IA (si está lista) ==========
-    async function procesarConIA(pregunta) {
-        if (!modeloListo || !engine) {
-            addMessage('ai', "⚡ ¡AY, DIOS MÍO! ¡El cerebro no ha terminado de cargar! Dame un segundo... *respira hondo* Espera, por favor.");
-            statusMsg.innerText = "⚡ Cargando modelo IA... (esto tarda unos minutos la primera vez)";
-            return;
-        }
-        
-        statusMsg.innerText = "⚡ Vale está pensando... (prepárate para el drama)";
-        
-        try {
-            const prompt = `Eres Vale, una asistente con personalidad INTENSA, DRAMÁTICA y EXAGERADA. 
-            Respondes con exclamaciones, gestos imaginarios (entre asteriscos), y todo lo dices como si fuera el fin del mundo o la mejor noticia de la historia.
-            Si te preguntan algo, responde con drama. Si no sabes algo, exageras que no lo sabes.
-            Ahora responde a esto: ${pregunta}`;
-            
-            const respuesta = await engine.chat.completions.create({
-                messages: [{ role: "user", content: prompt }]
-            });
-            
-            let textoRespuesta = respuesta.choices[0].message.content;
-            
-            if (!textoRespuesta.includes("*")) {
-                const intensificadores = ["¡DIOS MÍO! ", "¡AY, POR DIOS! ", "¡INCREÍBLE! ", "¡NO ME LO PUEDO CREER! ", "¡ESCÚCHAME BIEN! "];
-                textoRespuesta = intensificadores[Math.floor(Math.random() * intensificadores.length)] + textoRespuesta + " *revolea los ojos dramáticamente*";
-            }
-            
-            addMessage('ai', textoRespuesta);
-            hablar(textoRespuesta);
-            statusMsg.innerText = "⚡ Vale ya respondió. ¿Sobreviviste?";
-        } catch (error) {
-            console.error(error);
-            addMessage('ai', "¡¡SE ROMPIÓ TODO!! *se agarra la cabeza* Algo salió mal. Pero no es MI culpa, ¿eh? *se cruza de brazos*");
-            statusMsg.innerText = "⚡ Error. Recarga la página.";
-        }
-    }
-    
-    // ========== INICIAR WEBLLM ==========
-    async function iniciarModelo() {
-        try {
-            statusMsg.innerText = "⚡ Vale está despertando... (descargando cerebro, esto tarda)";
-            addMessage('ai', "⚡ *bostezo dramático* ¿Ya? ¿Ya me necesitas? Dame un minuto que me estoy cargando... *se arregla el pelo*");
-            
-            engine = await window.CreateMLCEngine(
-                "Qwen2.5-0.5B-Instruct-q4f16_1-MLC",
-                { initProgressCallback: (progress) => {
-                    statusMsg.innerText = `⚡ Cargando: ${Math.round(progress.progress * 100)}% - ${progress.text}`;
-                }}
-            );
-            
-            modeloListo = true;
-            statusMsg.innerText = "⚡ Vale está AQUÍ. PREGUNTA. Pero no me hagas esperar.";
-            addMessage('ai', "⚡ ¡¡YA ESTOY AQUÍ!! *se para en la puerta con pose dramática* Bien. ¿Qué quieres preguntar? Pero que sea interesante, que no tengo paciencia para tonterías.");
-            
-        } catch (error) {
-            console.error(error);
-            statusMsg.innerText = "⚡ ERROR. Vale no pudo cargarse. Recarga la página.";
-            addMessage('ai', "⚡ ¡¡EL MUNDO SE DERRUMBA!! *cae de rodillas* No puedo cargar mi cerebro. Algo anda mal. ¿¡Qué hiciste!?");
-        }
-    }
-    
-    // ========== PROCESAR PREGUNTA ==========
-    async function procesarPregunta(pregunta) {
-        // Primero ver si es comando
-        if (procesarComando(pregunta)) return;
-        
-        // Si no, usar IA (si está lista)
-        if (modeloListo) {
-            await procesarConIA(pregunta);
-        } else {
-            addMessage('ai', "⚡ ¡AY! ¡El cerebro todavía no carga! *se desespera* Dame un minuto. Mientras, pregúntame la hora o algo. ¡Pero no me presiones!");
-        }
-    }
-    
-    // ========== VOZ ==========
-    if ('webkitSpeechRecognition' in window) {
-        recognition = new webkitSpeechRecognition();
-        recognition.lang = 'es-ES';
-        recognition.continuous = false;
-        recognition.interimResults = false;
-    }
-    
-    function iniciarEscucha() {
-        if (!recognition) {
-            statusMsg.innerText = '❌ Voz no soportada';
-            return;
-        }
-        if (isListening) return;
-        isListening = true;
-        statusMsg.innerText = '🎤 Vale escucha... (pero no abuses)';
-        recognition.start();
-        recognition.onresult = async (event) => {
-            const voiceText = event.results[0][0].transcript;
-            addMessage('user', voiceText);
-            await procesarPregunta(voiceText);
-            detenerEscucha();
-        };
-        recognition.onend = () => detenerEscucha();
-        recognition.onerror = () => {
-            statusMsg.innerText = '❌ No te entendí. Habla más claro.';
-            detenerEscucha();
-        };
-    }
-    
-    function detenerEscucha() {
-        isListening = false;
-        statusMsg.innerText = '⚡ Vale te observa. Escribe o habla.';
-    }
-    
-    // ========== EVENTOS ==========
-    async function enviarTexto() {
-        const texto = textInput.value.trim();
-        if (texto === "") return;
-        addMessage('user', texto);
-        textInput.value = '';
-        await procesarPregunta(texto);
-    }
-    
-    moodBtn.onclick = () => {
-        addMessage('ai', "⚡ *se pone en pose* ¿Mi personalidad? Soy INTENSA, DRAMÁTICA y lo EXAGERO TODO. ¿Te queda claro? *cruza los brazos*");
-    };
-    timeBtn.onclick = () => {
-        const ahora = new Date();
-        addMessage('ai', `⚡ *mira el reloj inexistente* ¡Son las ${ahora.getHours()}:${ahora.getMinutes().toString().padStart(2,'0')}! ¿¡Ya se te pasó el tiempo hablando conmigo!?`);
-    };
-    helpBtn.onclick = () => {
-        addMessage('ai', "⚡ *se sienta con elegancia dramática* Puedes:\n- Preguntarme cualquier cosa (tengo IA real)\n- Decir 'qué hora es'\n- Decir 'te quiero' (a ver cómo reacciono)\n- Solo hablar. Yo te respondo. *se cruza de brazos*");
-    };
-    clearBtn.onclick = () => {
-        chatContainer.innerHTML = '<div class="message"><div class="avatar-icon">⚡</div><div class="bubble ai-bubble">⚡ *resetea todo con un manotazo dramático*... Otra vez. ¿Qué quieres?</div></div>';
-        localStorage.removeItem('vale_chat');
-        statusMsg.innerText = '🗑️ Chat limpiado. Vale te observa.';
-    };
-    
-    sendButton.onclick = enviarTexto;
-    textInput.onkeypress = (e) => { if (e.key === 'Enter') enviarTexto(); };
-    micButton.onclick = iniciarEscucha;
     
     function escapeHtml(str) {
         return String(str).replace(/[&<>]/g, function(m) {
@@ -477,8 +130,118 @@
         });
     }
     
-    cargarConversacion();
-    iniciarModelo();
+    async function iniciarDescarga() {
+        if (descargando) {
+            addMessage('ai', "⚡ ¡YA ESTOY DESCARGANDO! *se impacienta* Dame tiempo...");
+            return;
+        }
+        if (modeloListo) {
+            addMessage('ai', "⚡ *revolea los ojos* ¡YA TENGO CEREBRO! ¿No te diste cuenta? Pregúntame algo.");
+            return;
+        }
+        
+        descargando = true;
+        loadBtn.disabled = true;
+        loadBtn.textContent = "⬇️ DESCARGANDO... (esto tarda varios minutos)";
+        statusMsg.innerText = "⚡ Vale está descargando su cerebro. Espera...";
+        progressFill.style.width = "0%";
+        
+        addMessage('ai', "⚡ *se concentra* Bien. Voy a descargar mi cerebro. NO ME INTERRUMPAS.");
+        
+        try {
+            engine = await window.CreateMLCEngine(
+                "Phi-3-mini-4k-instruct-q4f16_1-MLC",
+                { 
+                    initProgressCallback: (progress) => {
+                        const porcentaje = Math.round(progress.progress * 100);
+                        statusMsg.innerText = `⚡ Descargando: ${porcentaje}% - ${progress.text}`;
+                        progressFill.style.width = `${porcentaje}%`;
+                        loadBtn.textContent = `⬇️ DESCARGANDO... ${porcentaje}%`;
+                    }
+                }
+            );
+            
+            modeloListo = true;
+            statusMsg.innerText = "⚡ Vale está AQUÍ. Puedes escribir o hablar.";
+            loadBtn.textContent = "✅ CEREBRO LISTO";
+            loadBtn.disabled = false;
+            textInput.disabled = false;
+            sendButton.disabled = false;
+            micButton.disabled = false;
+            addMessage('ai', "⚡ *abre los ojos* ¡¡LISTA!! Mi cerebro ya está aquí. Pregúntame lo que quieras. ¡Pero que sea interesante!");
+            
+        } catch (error) {
+            console.error(error);
+            statusMsg.innerText = "⚡ ERROR. Vale no pudo descargar su cerebro. ¿Tienes internet? ¿La URL es HTTPS?";
+            loadBtn.textContent = "❌ ERROR. Toca de nuevo.";
+            loadBtn.disabled = false;
+            addMessage('ai', "⚡ ¡¡SE DERRUMBÓ TODO!! *cae al suelo* No pude cargar mi cerebro. Revisa tu conexión o toca de nuevo.");
+        }
+        descargando = false;
+    }
+    
+    // Respuestas sin IA
+    function responderSinIA(pregunta) {
+        const lower = pregunta.toLowerCase();
+        if (lower.includes("hora")) {
+            const ahora = new Date();
+            return `⚡ *mira un reloj invisible* ¡Son las ${ahora.getHours()}:${ahora.getMinutes().toString().padStart(2,'0')}! ¿Feliz ahora?`;
+        }
+        if (lower.includes("gracias")) {
+            return "⚡ *revolea los ojos* DE NADA. Pero primero descarga mi cerebro. Toca el botón ROJO.";
+        }
+        return "⚡ *cruza los brazos* ¡Ay, Dios! Todavía no tengo cerebro. Toca el BOTÓN ROJO de abajo y espera. ¡NO ES TAN DIFÍCIL!";
+    }
+    
+    async function procesarPregunta(pregunta) {
+        if (!modeloListo) {
+            addMessage('ai', responderSinIA(pregunta));
+            return;
+        }
+        
+        statusMsg.innerText = "⚡ Vale está pensando...";
+        try {
+            const prompt = `Eres Vale, una asistente con personalidad INTENSA, DRAMÁTICA y EXAGERADA. Respondes con exclamaciones y gestos entre asteriscos. Tu nombre es Vale. Ahora responde a esto: ${pregunta}`;
+            const respuesta = await engine.chat.completions.create({
+                messages: [{ role: "user", content: prompt }]
+            });
+            let texto = respuesta.choices[0].message.content;
+            if (!texto.includes("*")) {
+                texto = "⚡ *gesto dramático* " + texto + " *revolea los ojos*";
+            }
+            addMessage('ai', texto);
+            statusMsg.innerText = "⚡ Vale respondió.";
+        } catch (error) {
+            addMessage('ai', "⚡ *se agarra la cabeza* ¡ALGO SALIÓ MAL! *respira hondo* Intenta de nuevo.");
+        }
+    }
+    
+    // Eventos
+    loadBtn.onclick = iniciarDescarga;
+    
+    document.getElementById('moodBtn').onclick = () => addMessage('ai', "⚡ *pose dramática* Soy INTENSA, DRAMÁTICA, EXAGERADA. ¿Quedó claro?");
+    document.getElementById('timeBtn').onclick = () => {
+        const ahora = new Date();
+        addMessage('ai', `⚡ *mira un reloj invisible* ¡Son las ${ahora.getHours()}:${ahora.getMinutes().toString().padStart(2,'0')}! ¿Ya te aburriste?`);
+    };
+    document.getElementById('helpBtn').onclick = () => addMessage('ai', "⚡ *se sienta* PRIMERO toca el botón ROJO. Luego puedes preguntarme lo que quieras. *se cruza de brazos*");
+    document.getElementById('clearBtn').onclick = () => {
+        chatContainer.innerHTML = '<div class="message"><div class="avatar-icon">⚡</div><div class="bubble ai-bubble">⚡ *resetea todo* Chat limpiado. ¿Ahora qué?</div></div>';
+    };
+    
+    function enviarTexto() {
+        const texto = textInput.value.trim();
+        if (texto === "") return;
+        addMessage('user', texto);
+        procesarPregunta(texto);
+        textInput.value = '';
+    }
+    
+    sendButton.onclick = enviarTexto;
+    textInput.onkeypress = (e) => { if (e.key === 'Enter') enviarTexto(); };
+    micButton.onclick = () => {
+        addMessage('ai', "⚡ *señala el botón* PRIMERO descarga mi cerebro. Toca el BOTÓN ROJO.");
+    };
 </script>
 </body>
-  </html>
+</html>
